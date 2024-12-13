@@ -11,6 +11,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /fork/index.php?url=$1
 
 <Files "log.txt">
-  Order Allow,Deny
-  Deny from all
+  Require all denied
 </Files>
