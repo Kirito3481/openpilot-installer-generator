@@ -56,8 +56,8 @@ $aliases = [new Alias("dragonpilot-community", "release3", ["dragonpilot", "dp"]
             new Alias("commaai", DEFAULT_STOCK_BRANCH, ["stock", "commaai"], "", "openpilot"),
             new Alias("sshane", "SA-master", ["shane", "smiskol", "sa", "sshane"], "", "Stock Additions"),
 	    new Alias("sunnyhaibin", "prod-c3", ["sunnypilot", "sp", "sunnyhaibin"], "", "sunnypilot"),
-	    new Alias("carrotpilot", "carrot2-v6", ["carrotpilot", "cp", "carrot"], "", "CarrotPilot"),
-	    new Alias("carrotpilot-kirito", "carrot2-v6", ["cp-kirito"], "carrotpilot", "CarrotPilot")];
+	    new Alias("ajouatom", "carrot2-v6", ["carrotpilot", "cp", "carrot"], "", "CarrotPilot"),
+	    new Alias("Kirito3481", "carrot2-v6", ["cp-kirito"], "carrotpilot", "CarrotPilot-Kirito")];
 foreach ($aliases as $al) {
     if (in_array($username, $al->aliases)) {
         $username = $al->name;
